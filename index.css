@@ -1,0 +1,152 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dm sans', sans-serif;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+header{
+    width: 100%;
+    position: relative;
+}
+
+header .top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header .top nav{
+    width: 100%;
+    padding: 35px 4%;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+header .top nav .logosec{
+    width: fit-content;
+    display: flex;  justify-content: flex-start; align-items: center;
+}
+
+header .top nav .logosec .logo{
+    color: black; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+}
+
+header .top nav .logosec .logo .lg{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'raleway', sans-serif;
+}
+
+header .top nav .logosec .logo .l2{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0px;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+
+
+header .top nav .logosec .sp{
+    display: flex; justify-content: center; align-items: center; 
+    margin-left: 15px;
+}
+
+header .top nav .logosec .sp a{
+    text-transform: capitalize; display: flex; justify-content: center; align-items: center; 
+    margin-left: 35px;
+    color: black;
+    letter-spacing: 0.6px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0px;
+    /* border-bottom: solid 2px; */
+    transition: 130ms linear;
+}
+
+header .top nav .logosec .sp a:hover{
+    /* color: rgb(0, 0, 0, 0.7); */
+    padding: 8px 0px;
+    padding-bottom: 12px;
+}
+
+
+header .top nav .logosec .sp .active{
+    border-bottom: solid 1.96px;
+}
+
+header .top nav .signinsec{
+    display: flex; justify-content: center; align-items: center; 
+}
+
+header .top nav .signinsec .log{
+    display: flex; justify-content: center; align-items: center; 
+    padding: 15px 0; width: 130px; border: solid 1px; border-radius: 15px; 
+}
+
+header .top nav .signinsec .login{
+    color: black; margin-right: 15px;
+}
+
+header .top nav .signinsec .signup{
+    color: white; background-color: black;
+}
+
+header .top nav .signinsec .signup:hover{
+     background-color: rgb(0, 0, 0, 0.6);
+}
+
+.m{display: none;} .x{display: none;}
+
+@media screen and (max-width: 1080px) {
+    header .top nav .logosec .sp{
+        display: none;
+    }  
+
+    .mobile_nav{
+        margin-left: 40px; display: flex; align-items: center; justify-content: right;
+    }
+
+    .m{display: flex;}
+
+}
+
+@media screen and (max-width: 650px) {
+    header .top nav{
+        padding: 30px 5%;
+    }
+
+    header .top nav .signinsec .login{
+        display: none;
+    }
+    
+    header .top nav .signinsec .signup{
+        display: none;
+    }
+
+    header .top nav .logosec .logo .lg{
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: 'raleway', sans-serif;
+    }
+    
+    header .top nav .logosec .logo .l2{
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 0px;
+        color: rgb(0, 0, 0, 0.8);
+    }
+    
+
+    .mobile_nav{
+        margin-left: 0px; display: flex; align-items: center; justify-content: right;
+    }
+
+    .m{display: flex;}
+
+}
