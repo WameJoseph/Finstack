@@ -694,7 +694,7 @@ header .top .main .description .content .box .sp{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   header .back .box1 {
     width: 350px;
     height: 350px;
@@ -717,5 +717,13 @@ header .top .main .description .content .box .sp{
       background-color: rgba(51, 51, 51, 0.05);
       margin-top: auto;
       /* background-color: black; */
+  }
+  header .top .main .text h3 {
+    margin-top: 25px;
+    font-size: 17px;
+  }
+  header .top .main {
+    padding: 10px 5% 25px 5%;
+    /* border: solid; */
   }
 }
