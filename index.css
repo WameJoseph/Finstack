@@ -718,6 +718,17 @@ header .top .main .description .content .box .sp{
       margin-top: auto;
       /* background-color: black; */
   }
+
+  header .top .main .text h1 .sp .flex {
+    height: 62px;
+  }
+  header .top .main .text h1 {
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    /* border: solid; */
+  }
+
   header .top .main .text h3 {
     margin-top: 25px;
     font-size: 17px;
